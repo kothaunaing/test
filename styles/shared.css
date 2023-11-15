@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Padauk Bold';
+  src: url(../fonts/Padauk-Bold.ttf);
+}
+
+body {
+  padding-top: 67px;
+  margin: 0;
+  background-color: rgb(233, 233, 233);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  font-size: 1em;
+}
+
+
+
+.app-display {
+  margin: 0 5px;
+  height: 100vh;
+  width: auto;
+}
+
+
+@media (max-width: 450px){
+  .header {
+    column-gap: 5px;
+    padding: 0 3px;
+  }
+  
+  .left-section {
+    padding: 10px 0px;
+  }
+
+  .middle-section {
+    column-gap: 2px;
+  }
+  
+  .search-by {
+    height: 43px;
+  }
+  
+  .search-btn {
+    padding: 3px 10px;
+  }
+  
+  .search-icon {
+    height: 30px;
+  }
+  
+  .search-btn:hover,
+  .search-by:hover {
+    opacity: 0.75;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .account-pic {
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(48, 48, 48, 0);
+    transition: border 0.15s;
+  }
+  
+  .account-pic:hover {
+    border: 1px solid rgb(48, 48, 48);
+  }
+}

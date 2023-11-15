@@ -1,0 +1,130 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 65px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(187, 100%, 54%, 0.507);
+  padding: 0 10px;
+  column-gap: 10px;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  z-index: 100;
+  backdrop-filter: blur(6px);
+}
+
+.left-section {
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0);
+  padding: 10px 8px;
+  transition: border 0.15s;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
+.left-section:hover {
+  border: 1px solid rgb(104, 104, 104);
+}
+
+.middle-section {
+  display: flex;
+  max-width: 700px;
+  flex: 1;
+  column-gap: 5px;
+  align-items: center;
+  position: relative;
+}
+
+.search-btn-container,
+.search-by-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  white-space: nowrap;
+  bottom: -40px;
+  padding: 6px;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(87, 87, 87);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  z-index: 300;
+}
+
+.search-btn-container:hover .tooltip,
+.search-by-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-by {
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid rgba(133, 133, 133, 0.582);
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.849);
+  backdrop-filter: blur(10px);
+}
+
+.search-bar {
+  padding: 0 10px;
+  height: 43px;
+  flex: 1;
+  width: 50px;
+  border: 1.5px solid rgb(156, 156, 156);
+  border-radius: 5px;
+  outline-color: black;
+  background-color: rgba(255, 255, 255, 0.849);
+  backdrop-filter: blur(10px);
+}
+
+.search-btn {
+  padding: 3px 10px;
+  border: 1px solid rgba(228, 228, 228, 0);
+  border-radius: 5px;
+  color: black;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: opacity 0.15s, border 0.15s;
+  background-color: rgba(255, 255, 255, 0.849);
+  backdrop-filter: blur(10px);
+}
+
+.search-icon {
+  height: 30px;
+}
+
+.search-btn:hover,
+.search-by:hover {
+  opacity: 0.75;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.account-pic {
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(48, 48, 48, 0);
+  transition: border 0.15s;
+}
+
+.account-pic:hover {
+  border: 1px solid rgb(48, 48, 48);
+}

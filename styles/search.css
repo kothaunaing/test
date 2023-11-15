@@ -1,0 +1,49 @@
+
+.autofill-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 200;
+}
+
+.autofill-active {
+  display: flex;
+}
+
+.name-container {
+  background-color: rgb(245, 245, 245);
+  flex: 1;
+  display: grid;
+  justify-content: center;
+  padding: 5px;
+  max-width: 600px;
+  border: 1px solid rgb(185, 185, 185);
+  border-top: none;
+  row-gap: 2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.name-container-height {
+  height: 200px;
+  overflow: auto;
+}
+
+.name {
+  padding: 2px 50px;
+  border: 1px solid rgba(165, 165, 165, 0);
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: system-ui, 'Padauk Bold';
+  font-weight: 600;
+  height: auto;
+  font-size: 1em;
+}
+
+.name:hover {
+  border: 1px solid rgb(214, 214, 214);
+}

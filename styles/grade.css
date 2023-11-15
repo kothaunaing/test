@@ -1,0 +1,110 @@
+
+.display-students {
+  display: grid;
+  row-gap: 2px;
+  column-gap: 20px;
+  padding: 20px;
+  border: 1.5px solid rgb(218, 218, 218);
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgb(247, 247, 247);
+}
+
+@media (min-width: 550px) and (max-width: 800px) {
+  .display-students {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 801px) {
+  .display-students {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-bottom: 5px;
+  background-color: hsl(0, 0%, 94%);
+  height: 50px;
+  margin-left: -5px;
+  margin-right: -5px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.grade-text,
+.total-student {
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.grade-back-btn {
+  display: flex;
+  margin-left: 20px;
+  padding: 5px 10px;
+  border: 1px solid rgba(196, 196, 196, 0);
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  transition: opacity 0.15s, border 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+
+.grade-back-btn:hover {
+  opacity: 0.75;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.student {
+  border: 1px solid rgba(190, 190, 190, 0.589);
+  border-radius: 0px;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  column-gap: 5px;
+  padding: 3px;
+  align-items: stretch;
+  background-color: hsl(150, 100%, 93%);
+  transition: opacity 0.15s, border 0.15s;
+  backdrop-filter: blur(6px);
+}
+
+.number {
+  margin-left: 5px;
+  font-weight: 600;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 195, 255);
+  margin: -3px 0 -3px -3px;
+}
+
+.student:hover {
+  opacity: 0.75;
+  border: 1px solid rgb(71, 71, 71);
+}
+
+.student-pic {
+  height: 70px;
+  border-radius: 35px;
+}
+
+.student-info {
+  display: grid;
+  row-gap: 2px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.not-found-message {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.back-icon {
+  height: 31px;
+}
